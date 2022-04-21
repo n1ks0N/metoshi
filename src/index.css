@@ -1,0 +1,53 @@
+a {
+  color: #fff;
+  outline: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+body {
+  font: 20px/140% "Georama", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  color: #fff;
+  background: #150633 url('./utils/images/topbg.png') 50% 0 no-repeat;
+}
+
+body * {
+  font-family: "Georama", sans-serif;
+}
+
+body.ru * {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.button {
+  line-height: 60px;
+  padding: 0 28px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-position 0.2s;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1) 50.1%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background-size: 200%;
+  text-align: center;
+}
+
+.button:hover {
+  background-position: right center;
+}

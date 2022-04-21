@@ -1,0 +1,90 @@
+.welcome_before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 150px;
+  width: 518px;
+  height: 913px;
+  z-index: -1;
+}
+
+.welcome_after {
+  left: -250px;
+  top: 0;
+  width: 779px;
+  height: 1145px;
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.faq_after {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: -28px;
+  width: 369px;
+  height: 209px;
+  background: url(../images/faq_stars.png);
+  pointer-events: none;
+}
+
+.contacts_before {
+  position: absolute;
+  content: "";
+  left: -77px;
+  top: 76px;
+  width: 69px;
+  height: 72px;
+}
+.bg_before {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  transform: translate(-150px,0);
+  z-index: -1;
+}
+
+.contacts_after {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  left: auto;
+  right: -77px;
+  top: auto;
+  bottom: 43px;
+  position: absolute;
+  content: "";
+  width: 69px;
+  height: 72px;
+}
+
+.contacts-bg_after {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  z-index: -1;
+}
+
+.header_menu_item {
+  display: flex;
+  align-items: center;
+}
+.welcome-h1_bg {
+  position: absolute;
+  /* width: 100%; */
+  top: auto;
+  left: auto;
+}
+@media screen and (max-width: 800px) {
+  .welcome_after, .welcome_before {
+    width: 100vw;
+  }
+  .welcome-h1_bg {
+    margin-top: 20px;
+  }
+}
