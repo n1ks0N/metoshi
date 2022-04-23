@@ -1,0 +1,21 @@
+.menu_item {
+  line-height: 130%;
+  padding: 0 22px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: block;
+  color: #fff;
+}
+
+.menu_item:hover {
+  color: #ffff14;
+}
+
+.menu_item--standard {
+  font-size: 20px;
+}
+.menu_item--small {
+  font-size: 16px;
+}
