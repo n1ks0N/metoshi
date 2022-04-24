@@ -1,0 +1,10 @@
+.switcher-option-item-button {
+  padding: 11px 25px;
+  padding: 10px 56px;
+  border-radius: 32px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.switcher-option-item-button--selected {
+  background-color: rgba(255, 255, 255, 0.04);
+}

@@ -12,5 +12,5 @@ const Template = (args) => <Button {...args} />;
 export const Main = Template.bind({})
 Main.args = {
   text: '30.000 $METO',
-  popup: false
+  popup: false,
 }

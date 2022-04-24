@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css';
+import './Button.css';
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({ classNames, text, popup, ...props }) => {
   return (
     <div

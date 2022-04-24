@@ -1,0 +1,8 @@
+.h2 {
+  font-weight: 800;
+  position: relative;
+  line-height: 172px;
+  margin: 0;
+  font-family: "Georama", sans-serif;
+  width: fit-content;
+}

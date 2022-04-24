@@ -13,7 +13,7 @@ import prodBuildings from './utils/images/prod_buildings_s.svg'
 import prodFinance from './utils/images/prod_finance_s.svg'
 import logo from './utils/images/logo.svg'
 import topbg from './utils/images/topbg.png'
-import { MenuItem } from "./stories/MenuItem.jsx";
+import { Link } from "./stories/Link.jsx";
 import { Button } from "./stories/Button.jsx";
 
 
@@ -35,10 +35,10 @@ const App = () => {
         </div>
         <nav className="header_menu">
           {/* <a className="header_menu_item" href="">Home</a> */}
-          <MenuItem size="standard" text="Home" svg={false} link="#" classNames="header_menu_item" />
-          <MenuItem size="standard" text="Buy NFT" svg={true} link="#" classNames="header_menu_item" />
-          <MenuItem size="standard" text="Whitepaper" svg={true} link="#" classNames="header_menu_item" />
-          <MenuItem size="standard" text="Contacts" svg={true} link="#" classNames="header_menu_item" />
+          <Link size="standard" text="Home" svg={false} url="#" classNames="header_menu_item" />
+          <Link size="standard" text="Buy NFT" svg={true} url="#" classNames="header_menu_item" />
+          <Link size="standard" text="Whitepaper" svg={true} url="#" classNames="header_menu_item" />
+          <Link size="standard" text="Contacts" svg={true} url="#" classNames="header_menu_item" />
         </nav>
         <div className="header_langs">
           <a className="header_lang_item">ENG</a>
@@ -107,14 +107,14 @@ const App = () => {
               </ul>
             </li>
             {/* <li>
-              <a className="link" href="https://metoshi.com/finance.html">Finance</a>
+              <a className="url" href="https://metoshi.com/finance.html">Finance</a>
               
             </li> */}
-            <MenuItem size="small" svg={true} text="Finance" link="https://metoshi.com/finance.html" />
-            <MenuItem size="small" svg={true} text="Comics" link="https://metoshi.com#decencomics" />
-            <MenuItem size="small" svg={true} text="Tokenomics" link="https://metoshi.com#tokenomics" />
-            <MenuItem size="small" svg={true} text="Whitepaper" link="http://whitepaper.metoshi.com" />
-            <MenuItem size="small" svg={true} text="Contacts" link="https://metoshi.com#contacts" />
+            <Link size="small" svg={true} text="Finance" url="https://metoshi.com/finance.html" />
+            <Link size="small" svg={true} text="Comics" url="https://metoshi.com#decencomics" />
+            <Link size="small" svg={true} text="Tokenomics" url="https://metoshi.com#tokenomics" />
+            <Link size="small" svg={true} text="Whitepaper" url="http://whitepaper.metoshi.com" />
+            <Link size="small" svg={true} text="Contacts" url="https://metoshi.com#contacts" />
             
           </ul>
         </div>
