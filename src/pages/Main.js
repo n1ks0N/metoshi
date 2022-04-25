@@ -32,13 +32,11 @@ const Main = () => {
   ]);
   const [popup, setPopup] = useState(false);
   const switcherToggle = (id) => {
-    setSwitcherState((prev) =>
-      prev.map((item) =>
-        item.id === id
-          ? { ...item, selected: true }
-          : { ...item, selected: false }
-      )
-    );
+    setSwitcherState(prev => prev.map((item) =>
+    item.id === id
+      ? { ...item, selected: true }
+      : { ...item, selected: false }
+  ));
   };
   return (
     <>

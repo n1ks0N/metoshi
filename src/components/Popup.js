@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../stories/Button.jsx";
+import { StatText } from "../stories/StatText.jsx";
 import popupCloseIcon from "../utils/images/icon_close.svg";
 import redPanda from "../utils/images/redpanda3.png";
 
@@ -21,12 +22,15 @@ const Popup = ({ popup, setPopup }) => {
             reduced by &nbsp;<span>30%-250%!</span>
           </p>
           <div className="stats">
-            <div className="stat_item common">
+            <StatText type="common" />
+            <StatText type="unique" />
+            <StatText type="rare" />
+            {/* <div className="stat_item common">
               <div className="stat_item_icon"></div>
               <p>50%</p>
               <span>Common</span>
-            </div>
-            <div className="stat_item unique">
+            </div> */}
+            {/* <div className="stat_item unique">
               <div className="stat_item_icon"></div>
               <p>30%</p>
               <span>Unique</span>
@@ -35,7 +39,7 @@ const Popup = ({ popup, setPopup }) => {
               <div className="stat_item_icon"></div>
               <p>20%</p>
               <span>Rare</span>
-            </div>
+          </div> */}
           </div>
           <Button text="Buy NFT" />
           {/* <div className="button">Buy NFT</div> */}
@@ -45,4 +49,4 @@ const Popup = ({ popup, setPopup }) => {
   );
 };
 
-export default Popup
+export default Popup;
